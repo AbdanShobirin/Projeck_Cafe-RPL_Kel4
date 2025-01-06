@@ -59,6 +59,61 @@ if(isset ($_SESSION['username'])){
 <link href="template/dashboard/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" href="template/dashboard/css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .carousel {
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+      overflow: hidden;
+      position: relative;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .carousel img {
+      width: 100%;
+      display: block;
+    }
+
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .carousel-buttons button {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .carousel-buttons button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
 </head>
 <body>
 
@@ -458,6 +513,53 @@ if(isset ($_SESSION['username'])){
           <br> Semoga Hari Anda Menyenangkan.
         </center>
       </div>
+      <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/736x/5f/16/ce/5f16ce0f5568bea1fb01bd887c64d152.jpg" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/736x/d3/c1/e3/d3c1e371944943a8b278065172d7c6b9.jpg" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/736x/5f/16/ce/5f16ce0f5568bea1fb01bd887c64d152.jpg" alt="Slide 3">
+            </div>
+        </div>
+
+        <div class="carousel-buttons">
+          <button id="prev">Previous</button>
+          <button id="next">Next</button>
+        </div>
+      </div>
+
+      <script>
+        const carouselInner = document.querySelector('.carousel-inner');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const totalSlides = document.querySelectorAll('.carousel-item').length;
+        let currentIndex = 0;
+
+        function updateCarousel() {
+          const offset = -currentIndex * 100;
+          carouselInner.style.transform = `translateX(${offset}%)`;
+        }
+
+        function showNextSlide() {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateCarousel();
+        }
+
+        function showPrevSlide() {
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+        }
+
+        nextButton.addEventListener('click', showNextSlide);
+        prevButton.addEventListener('click', showPrevSlide);
+
+        // Auto-slide every 3 seconds
+        setInterval(showNextSlide, 3000);
+      </script>
       <?php
         }
       ?>
