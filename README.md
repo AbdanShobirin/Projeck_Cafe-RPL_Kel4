@@ -9,7 +9,8 @@ This text is centered.
 [Click here](https://example.com) for more details.
 
 </div>
-
-<h1>**PROJECT RPL KELOMPOK 4**</h1>
-<h1>CAFE SELF SERVICE</h1>
+<div style="text-align: center;">
+  <h1>PROJECT RPL KELOMPOK 4</h1>
+  <h1>CAFE SELF SERVICE</h1>
+</div>
 <h2>Selamat Datang</h2>
