@@ -10,7 +10,8 @@ This text is centered.
 
 </div>
 <div style="text-align: center;">
-  <h1>PROJECT RPL KELOMPOK 4</h1>
-  <h1>CAFE SELF SERVICE</h1>
+ \ghghgh
 </div>
 <h2>Selamat Datang</h2>
+<h1>PROJECT RPL KELOMPOK 4</h1>
+  <h1>CAFE SELF SERVICE</h1>
