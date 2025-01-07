@@ -1,7 +1,44 @@
-<p align="center" style="font-size: 100;">
-  <strong>PROJECT RPL KELOMPOK 4</strong> <br>
-  CAFE SELF SERVICE <br>
-  <img src="https://i.pinimg.com/736x/a3/dd/21/a3dd212965b4d0a0d9abc1004b524c69.jpg" alt="Logo" width="150px" height="150px"><br>
-</p>
-<h2>Selamat Datang</h2>
 
+# CAFE SELF SERVICE
+
+
+
+
+
+
+![App Screenshot](https://i.pinimg.com/736x/a3/dd/21/a3dd212965b4d0a0d9abc1004b524c69.jpg)
+
+
+## Project By Kelompok 4
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/AbdanShobirin/Projeck_Cafe-RPL_Kel4
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## Demo
+
+http://localhost/restoran/index.php
