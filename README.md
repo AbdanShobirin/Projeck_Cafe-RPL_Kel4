@@ -5,8 +5,25 @@
 (https://github.com/AbdanShobirin) <br>
 (https://github.com/kikiapr)<br>
 (https://github.com/adhim0000000001)<br>
+(https://github.com/mamzcc)<br>
 ()<br>
-()<br>
+
+
+## Diagram Alir data
+
+![Diagram Tanpa Judul drawio (7)](https://github.com/user-attachments/assets/adacfb49-f499-4260-ac3f-ac98e5cb7d28)
+
+
+## Activity Diagram Proses Pesanan
+
+![Activity diagram Proses pesanan](https://github.com/user-attachments/assets/d3baf16b-7d7b-4715-8c3b-54389f76815c)
+
+
+## Activity Diagram Membuat Pesanan
+
+![Activity diagram membuat pesanan](https://github.com/user-attachments/assets/b282cf7c-538e-4b1c-b838-f23c710f8324)
+
+
 
 ## Run Locally
 
