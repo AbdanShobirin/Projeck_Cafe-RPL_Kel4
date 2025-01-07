@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 	include "connection/koneksi.php";
+	$icon = "template/masuk/images/icon.jpg";
 	session_start();
 	if(isset ($_SESSION['username'])){
 		header('location: beranda.php');
@@ -30,6 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="template/masuk/css/util.css">
 	<link rel="stylesheet" type="text/css" href="template/masuk/css/main.css">
 <!--===============================================================================================-->
+	<link rel="icon" href="<?php echo $icon; ?>" type="image/jpg">
 </head>
 <body>
 	<div class="limiter">

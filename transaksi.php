@@ -2,6 +2,7 @@
 
 <?php
 include "connection/koneksi.php";
+$icon = "template/masuk/images/icon.jpg";
 session_start();
 ob_start();
 
@@ -39,6 +40,7 @@ if(isset ($_SESSION['username'])){
 <link href="template/dashboard/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" href="template/dashboard/css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+<link rel="icon" href="<?php echo $icon; ?>" type="image/jpg">
 </head>
 <body>
 

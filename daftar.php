@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
   include "connection/koneksi.php";
+  $icon = "template/masuk/images/icon.jpg";
   ob_start();
   session_start();
 ?>
@@ -20,6 +21,7 @@
 <link rel="stylesheet" href="css/bootstrap-wysihtml5.css" />
 <link href="template/dashboard/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+<link rel="icon" href="<?php echo $icon; ?>" type="image/jpg">
 </head>
 <body>
 
