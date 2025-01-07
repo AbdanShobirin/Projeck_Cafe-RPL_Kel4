@@ -6,7 +6,7 @@
 
 
 
-![App Screenshot](https://i.pinimg.com/736x/a3/dd/21/a3dd212965b4d0a0d9abc1004b524c69.jpg)
+![App Screenshot](https://i.pinimg.com/736x/a3/dd/21/a3dd212965b4d0a0d9abc1004b524c69.jpg) { width: 50% height: 50% }
 
 
 ## Project By Kelompok 4
