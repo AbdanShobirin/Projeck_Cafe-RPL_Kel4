@@ -8,7 +8,7 @@
 (https://github.com/mamzcc)<br>
 (https://github.com/ardeliasalsabila)<br>
 
-<p align="center" style="font-size: 300px;">
+<p align="center" style="font-size: 3000px;">
   <strong>Welcome to My Project!</strong><br>
   This text is centered and larger.<br>
   <img src="https://via.placeholder.com/150" alt="Logo"><br>
