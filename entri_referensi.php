@@ -75,7 +75,7 @@ if(isset ($_SESSION['username'])){
   ?>
     <li><a href="beranda.php"><i class="icon icon-home"></i> <span>Beranda</span></a> </li>
     <li class="active"> <a href="entri_referensi.php"><i class="icon icon-tasks"></i> <span>Daftar Menu</span></a> </li>
-    <li> <a href="entri_order.php"><i class="icon icon-shopping-cart"></i> <span>Pesanan</span></a> </li>
+    <li> <a href="entri_order.php"><i class="icon icon-shopping-cart"></i> <span>Pesan Menu</span></a> </li>
     <li> <a href="entri_transaksi.php"><i class="icon icon-inbox"></i> <span>Daftar Transaksi</span></a> </li>
     <li> <a href="generate_laporan.php"><i class="icon icon-print"></i> <span>Generate Laporan</span></a> </li>
     <li> <a href="logout.php"><i class="icon icon-sign-out"></i> <span>Logout</span></a> </li>
@@ -83,7 +83,7 @@ if(isset ($_SESSION['username'])){
     } else if($r['id_level'] == 2){
   ?>
     <li><a href="beranda.php"><i class="icon icon-home"></i> <span>Beranda</span></a> </li>
-    <li> <a href="entri_order.php"><i class="icon icon-shopping-cart"></i> <span>Pesanan</span></a> </li>
+    <li> <a href="entri_order.php"><i class="icon icon-shopping-cart"></i> <span>Pesan Menu</span></a> </li>
     <li> <a href="generate_laporan.php"><i class="icon icon-print"></i> <span>Generate Laporan</span></a> </li>
     <li> <a href="logout.php"><i class="icon icon-sign-out"></i> <span>Logout</span></a> </li>
   <?php
@@ -103,7 +103,7 @@ if(isset ($_SESSION['username'])){
     } else if($r['id_level'] == 5){
   ?>
     <li><a href="beranda.php"><i class="icon icon-home"></i> <span>Beranda</span></a> </li>
-    <li> <a href="entri_order.php"><i class="icon icon-shopping-cart"></i> <span>Pesanan</span></a> </li>
+    <li> <a href="entri_order.php"><i class="icon icon-shopping-cart"></i> <span>Pesan Menu</span></a> </li>
     <li> <a href="logout.php"><i class="icon icon-sign-out"></i> <span>Logout</span></a> </li>
   <?php
     }
@@ -121,7 +121,7 @@ if(isset ($_SESSION['username'])){
 <!--End-breadcrumbs-->
   
 <!--Action boxes-->
-  <div class="container-fluid">
+<div class="container-fluid">
     <div class="row-fluid">
     <?php
       if($r['id_level'] == 1){
@@ -134,35 +134,31 @@ if(isset ($_SESSION['username'])){
         <div class="widget-content" >
           <ul class="thumbnails">
             <div class="btn-icon-pg">
-              <ul>
-                <!--Looping-->
-                <?php
+              <ul class="thumbnails"> <?php
                   $query_data_makanan = "select * from tb_masakan order by id_masakan desc";
                   $sql_data_makanan = mysqli_query($conn, $query_data_makanan);
                   $no_makanan = 1;
 
                   while($r_dt_makanan = mysqli_fetch_array($sql_data_makanan)){
                 ?>
-                    <li class="span2"> 
-                      <a> <img src="gambar/<?php echo $r_dt_makanan['gambar_masakan']?>" alt="" > </a>
-                      <div class="actions">
-                        <a class="lightbox_trigger" href="gambar/<?php echo $r_dt_makanan['gambar_masakan'];?>"><i class="icon-search"></i>&nbsp;Lihat</a> 
-                      </div>
-                      <table class="table table-bordered">
-                        <tbody>
-                          <tr>
-                            <td><?php echo $r_dt_makanan['nama_masakan'];?></td>
-                          </tr>
-                          <tr>
-                            <td>Harga / Porsi</td>
-                            <td>Rp. <?php echo $r_dt_makanan['harga'];?>,-</td>
-                          </tr>
-                          <tr>
-                            <td>Stok</td>
-                            <td><?php echo $r_dt_makanan['stok'];?> Porsi</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <li class="span3" style="margin-bottom: 20px;"> <div class="thumbnail" style="height: 350px; overflow: hidden; display: flex; flex-direction: column;"> <a style="display: block; flex-grow: 1; overflow: hidden;"> <img src="gambar/<?php echo $r_dt_makanan['gambar_masakan']?>" alt="" style="width: 100%; object-fit: cover; height: 100%;"> </a>
+                        <div class="actions" style="text-align: center; margin-top: 5px;">
+                          <a class="lightbox_trigger" href="gambar/<?php echo $r_dt_makanan['gambar_masakan'];?>"><i class="icon-search"></i>&nbsp;Lihat</a> 
+                        </div>
+                        <table class="table table-bordered" style="margin-bottom: 0;"> <tbody>
+                            <tr>
+                              <td style="text-align: center; font-weight: bold;"><?php echo $r_dt_makanan['nama_masakan'];?></td>
+                            </tr>
+                            <tr>
+                              <td>Harga / Porsi</td>
+                              <td>Rp. <?php echo $r_dt_makanan['harga'];?>,-</td>
+                            </tr>
+                            <tr>
+                              <td>Stok</td>
+                              <td><?php echo $r_dt_makanan['stok'];?> Porsi</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       <form action="" method="post">
                         <button type="submit" value="<?php echo $r_dt_makanan['id_masakan'];?>" name="edit_menu" class="btn btn-success btn-mini"><i class='icon-pencil'></i>&nbsp;&nbsp;Edit &nbsp;&nbsp;</button>
                         <button type="submit" value="<?php echo $r_dt_makanan['id_masakan'];?>" name="hapus_menu" class="btn btn-mini btn-danger"><i class='icon icon-trash'></i>&nbsp; Hapus</button>
