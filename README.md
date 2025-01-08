@@ -1,29 +1,23 @@
-
-# CAFE SELF SERVICE
-  <img src="https://i.pinimg.com/736x/a3/dd/21/a3dd212965b4d0a0d9abc1004b524c69.jpg" alt="Logo" width="150px" height="150px"><br>
-## Project By Kelompok 4
-(https://github.com/AbdanShobirin) <br>
-(https://github.com/kikiapr)<br>
-(https://github.com/adhim0000000001)<br>
-(https://github.com/mamzcc)<br>
-(https://github.com/ardeliasalsabila)<br>
-
-
 <h1 align="center">WELCOME TO MY PROJECT!</h1>
 <h1 align="center">CAFE SELF SERVICE</h1>
 <p align="center">
-  This text is centered and looks clean.<br>
-  <img src="https://via.placeholder.com/150" alt="Logo"><br>
-  <a href="https://example.com">Click here</a> for more details.
+  <img src="template/masuk/images/cafe.jpg" alt="Logo" width="300"><br>
 </p>
 
+## Project By Kelompok 4
+Abdan Shobirin : (https://github.com/AbdanShobirin) <br>
+Rizki Aprilia : (https://github.com/kikiapr)<br>
+Mizzu Fauzil : (https://github.com/adhim0000000001)<br>
+Imam Permana : (https://github.com/mamzcc)<br>
+Ardellia Salsabilla : (https://github.com/ardeliasalsabila)<br>
 
-## Features
+## Tentang Project
+Reporsiotory ini dibuat untuk membahas aplikasi self service pada semua cafe berdasarkan jurnal "APLIKASI SELF SERVICE MENU MENGGUNAKAN METODE
+SCRUM BERBASIS ANDROID (CASE STUDY : WARKOBAR CAFÉ CIKARANG)" oleh Chrismanto Eka Prastio dan Nur Ani
 
-- This section is not centered.
-- Markdown and HTML coexist perfectly.
-
-
+## Mengapa menggunakan metode agile scrum pada penelitian?
+Metode Agile adalah sebuah metodologi dalam pengembangan software yang didasarkan pada proses pengerjaan berulang yang terdiri dari aturan dan solusi yang sudah disepakati.
+Metode Scrum merupakan metodologi yang termasuk dalam agile software development. Scrum dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai dengan keinginan pengguna, dapat digunakan dalam proyek besar maupun kecil, dan mudah untuk mengadopsi perubahan. Tahapan aktifitas scrum meliputi produk backlog, sprint backlog, daily scrum, sprint review, dan sprint restropective. Peran dalam scrum meliputi product owner, scrum master, dan development team. Scrum memiliki tahapan yang terstruktur dan bersifat perulangan, sehingga jika produk pada sprint pertama belum cukup memenuhi kebutuhan, maka pada sprint berikutnya dapat dikembangkan sistem yang sesuai dengan evaluasi pengguna.
 
 ## Diagram Alir data
 
