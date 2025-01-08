@@ -8,6 +8,19 @@
 (https://github.com/mamzcc)<br>
 (https://github.com/ardeliasalsabila)<br>
 
+<p align="center" style="font-size: 300px;">
+  <strong>Welcome to My Project!</strong><br>
+  This text is centered and larger.<br>
+  <img src="https://via.placeholder.com/150" alt="Logo"><br>
+  <a href="https://example.com">Click here</a> for more details.
+</p>
+
+## Features
+
+- This section is not centered.
+- Markdown and HTML coexist perfectly.
+
+
 
 ## Diagram Alir data
 
