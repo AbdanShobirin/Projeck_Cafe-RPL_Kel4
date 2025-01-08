@@ -20,19 +20,19 @@ Metode Agile adalah sebuah metodologi dalam pengembangan software yang didasarka
 Scrum dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai dengan keinginan pengguna, dapat digunakan dalam proyek besar maupun kecil, dan mudah untuk mengadopsi perubahan. Tahapan aktifitas scrum meliputi produk backlog, sprint backlog, daily scrum, sprint review, dan sprint restropective. Peran dalam scrum meliputi product owner, scrum master, dan development team. Scrum memiliki tahapan yang terstruktur dan bersifat perulangan, sehingga jika produk pada sprint pertama belum cukup memenuhi kebutuhan, maka pada sprint berikutnya dapat dikembangkan sistem yang sesuai dengan evaluasi pengguna.
 
 ## Diagram Alir data
-
-![Diagram Tanpa Judul drawio (7)](https://github.com/user-attachments/assets/adacfb49-f499-4260-ac3f-ac98e5cb7d28)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/adacfb49-f499-4260-ac3f-ac98e5cb7d28" alt="Diagram Tanpa Judul drawio" width="500">
+</p>
 
 ## Activity Diagram Proses Pesanan
-
-![Activity diagram Proses pesanan](https://github.com/user-attachments/assets/d3baf16b-7d7b-4715-8c3b-54389f76815c)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d3baf16b-7d7b-4715-8c3b-54389f76815c" alt="Diagram Tanpa Judul drawio" width="500">
+</p>
 
 ## Activity Diagram Membuat Pesanan
-
-![Activity diagram membuat pesanan](https://github.com/user-attachments/assets/b282cf7c-538e-4b1c-b838-f23c710f8324)
-
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b282cf7c-538e-4b1c-b838-f23c710f8324" alt="Diagram Tanpa Judul drawio" width="500">
+</p>
 
 ## Run Locally
 
