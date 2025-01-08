@@ -16,7 +16,7 @@ Reporsiotory ini dibuat untuk membahas aplikasi self service pada semua cafe ber
 SCRUM BERBASIS ANDROID (CASE STUDY : WARKOBAR CAFÉ CIKARANG)" oleh Chrismanto Eka Prastio dan Nur Ani
 
 ## Mengapa menggunakan metode agile scrum pada penelitian?
-Metode Agile adalah sebuah metodologi dalam pengembangan software yang didasarkan pada proses pengerjaan berulang yang terdiri dari aturan dan solusi yang sudah disepakati. Sedangkan Scrum merupakan metodologi yang termasuk dalam agile software development. <br>
+Metode Agile adalah sebuah metodologi dalam pengembangan software yang didasarkan pada proses pengerjaan berulang yang terdiri dari aturan dan solusi yang sudah disepakati. Sedangkan Scrum merupakan metodologi yang termasuk dalam agile software development. <br> <br>
 Scrum dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai dengan keinginan pengguna, dapat digunakan dalam proyek besar maupun kecil, dan mudah untuk mengadopsi perubahan. Tahapan aktifitas scrum meliputi produk backlog, sprint backlog, daily scrum, sprint review, dan sprint restropective. Peran dalam scrum meliputi product owner, scrum master, dan development team. Scrum memiliki tahapan yang terstruktur dan bersifat perulangan, sehingga jika produk pada sprint pertama belum cukup memenuhi kebutuhan, maka pada sprint berikutnya dapat dikembangkan sistem yang sesuai dengan evaluasi pengguna.
 
 ## Diagram Alir data
