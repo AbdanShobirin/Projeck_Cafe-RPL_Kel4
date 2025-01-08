@@ -6,7 +6,7 @@
 
 ## Project By Kelompok 4
 Abdan Shobirin : (https://github.com/AbdanShobirin) <br>
-Rizki Aprilia : (https://github.com/kikiapr)<br>
+Rizki Aprillia : (https://github.com/kikiapr)<br>
 Mizzu Fauzil : (https://github.com/adhim0000000001)<br>
 Imam Permana : (https://github.com/mamzcc)<br>
 Ardellia Salsabilla : (https://github.com/ardeliasalsabila)<br>
