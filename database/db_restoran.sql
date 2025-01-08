@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Jan 2025 pada 14.50
+-- Waktu pembuatan: 08 Jan 2025 pada 20.11
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.0.30
 
@@ -63,11 +63,15 @@ CREATE TABLE `tb_masakan` (
 --
 
 INSERT INTO `tb_masakan` (`id_masakan`, `nama_masakan`, `harga`, `stok`, `status_masakan`, `gambar_masakan`) VALUES
-(8, 'Sate Ayam', '11000', 15, 'tersedia', 'Sate Ayam.jpeg'),
-(14, 'Sayur Asem', '7500', 76, 'tersedia', 'Sayur Asem.jpeg'),
-(18, 'Ayam Geprek', '11000', 0, 'tersedia', 'Ayam Geprek.jpeg'),
-(19, 'Nasi Pecel', '7000', 20, 'tersedia', 'Nasi Pecel.jpg'),
-(20, 'Cincau', '2500', 97, 'tersedia', 'Cincau.jpg');
+(25, 'Rujak Cireng', '25.000', 20, 'tersedia', 'Rujak Cireng.jpg'),
+(27, 'Spaghety', '25.000', 50, 'tersedia', 'Spaghety.jpg'),
+(29, 'French Fries', '15.000', 20, 'tersedia', 'French Fries.jpg'),
+(30, 'Chicken Wings', '30.000', 50, 'tersedia', 'Chicken Wings.jpg'),
+(31, 'Sate Taichan', '40.000', 20, 'tersedia', 'Sate Taichan.jpg'),
+(32, 'Indomie', '15.000', 50, 'tersedia', 'Indomie.jpg'),
+(33, 'Latte', '10.000', 40, 'tersedia', 'Latte.jpg'),
+(35, 'Milk Shake', '15.000', 20, 'tersedia', 'Milk Shake.jpg'),
+(36, 'Aneka Jus', '10.000', 50, 'tersedia', 'Aneka Jus.jpg');
 
 -- --------------------------------------------------------
 
@@ -124,7 +128,9 @@ CREATE TABLE `tb_pesan` (
 --
 
 INSERT INTO `tb_pesan` (`id_pesan`, `id_user`, `id_order`, `id_masakan`, `jumlah`, `status_pesan`) VALUES
-(33, 1, 14, 14, 2, 'sudah');
+(87, 1, 0, 24, 0, ''),
+(88, 1, 0, 23, 0, ''),
+(92, 1, 0, 34, 0, '');
 
 -- --------------------------------------------------------
 
@@ -144,7 +150,9 @@ CREATE TABLE `tb_stok` (
 --
 
 INSERT INTO `tb_stok` (`id_stok`, `id_pesan`, `jumlah_terjual`, `status_cetak`) VALUES
-(1, 33, 1, 'belum cetak');
+(42, 87, 0, 'belum cetak'),
+(43, 88, 0, 'belum cetak'),
+(47, 92, 0, 'belum cetak');
 
 -- --------------------------------------------------------
 
@@ -167,7 +175,8 @@ CREATE TABLE `tb_user` (
 
 INSERT INTO `tb_user` (`id_user`, `username`, `password`, `nama_user`, `id_level`, `status`) VALUES
 (1, 'admin', '123', 'Hendrik Setiawan', 1, 'aktif'),
-(17, 'aprilcantik', '123', 'april', 2, 'aktif');
+(17, 'aprilcantik', '123', 'april', 2, 'aktif'),
+(18, 'iniapril', '123', 'april', 5, 'aktif');
 
 --
 -- Indexes for dumped tables
@@ -232,43 +241,35 @@ ALTER TABLE `tb_level`
 -- AUTO_INCREMENT untuk tabel `tb_masakan`
 --
 ALTER TABLE `tb_masakan`
-  MODIFY `id_masakan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_masakan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_order`
 --
 ALTER TABLE `tb_order`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_pesan`
 --
 ALTER TABLE `tb_pesan`
-  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_stok`
 --
 ALTER TABLE `tb_stok`
-  MODIFY `id_stok` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_stok` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
-
---
--- Ketidakleluasaan untuk tabel `tb_pesan`
---
-ALTER TABLE `tb_pesan`
-  ADD CONSTRAINT `tb_pesan_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `tb_pesan_ibfk_2` FOREIGN KEY (`id_order`) REFERENCES `tb_order` (`id_order`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `tb_pesan_ibfk_3` FOREIGN KEY (`id_masakan`) REFERENCES `tb_masakan` (`id_masakan`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Ketidakleluasaan untuk tabel `tb_stok`
