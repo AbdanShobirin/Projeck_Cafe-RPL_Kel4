@@ -53,4 +53,4 @@ Start the server
 
 ## Demo
 
-http://localhost/restoran/index.php
+http://localhost/restoran/login.php
