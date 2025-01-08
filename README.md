@@ -8,11 +8,8 @@
 (https://github.com/mamzcc)<br>
 (https://github.com/ardeliasalsabila)<br>
 
-<p align="center" style="font-size: 3000px;">
-  <strong>Welcome to My Project!</strong><br>
-  This text is centered and larger.<br>
-  <img src="https://via.placeholder.com/150" alt="Logo"><br>
-  <a href="https://example.com">Click here</a> for more details.
+<p style="font-size: 20px; color: blue; text-align: center;">
+This is a styled text with custom font size and color.
 </p>
 
 ## Features
