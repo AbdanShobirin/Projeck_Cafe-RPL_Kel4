@@ -11,7 +11,7 @@
 
 ## Diagram Alir data
 
-![Diagram Tanpa Judul drawio (7)](https://github.com/user-attachments/assets/adacfb49-f499-4260-ac3f-ac98e5cb7d28)
+![Diagram Tanpa Judul drawio (7)](https://github.com/user-attachments/assets/adacfb49-f499-4260-ac3f-ac98e5cb7d28) width="200" height="150"
 
 
 ## Activity Diagram Proses Pesanan
