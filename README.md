@@ -34,6 +34,7 @@ Scrum dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai denga
   <img src="https://github.com/user-attachments/assets/b282cf7c-538e-4b1c-b838-f23c710f8324" alt="Diagram Tanpa Judul drawio" width="500">
 </p>
 
+
 ## Activity Diagram Keseluruhan
 <p align="center">
   <img src="diagram activty keseluruhan.jpeg" alt="Diagram Tanpa Judul drawio" width="500">
