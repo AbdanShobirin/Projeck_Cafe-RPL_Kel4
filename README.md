@@ -39,10 +39,6 @@ Scrum dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai denga
   <img src="diagram activty keseluruhan.jpeg" alt="Diagram Tanpa Judul drawio" width="500">
 </p>
 
-## Relasi Table
-<p align="center">
-  <img src="database/Relasi.png" alt="Diagram Tanpa Judul drawio" width="500">
-</p>
 
 ## Run Locally
 
